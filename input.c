@@ -10,7 +10,7 @@ static char helpstring[] =
     "oscillators: --blinker, --toad, --beacon\n"
     "spaceships: --glider --lwss\n"
     "big: --penta --pulsar\n"
-    "guns: --gosper-stable --gosper--unstable\n";
+    "guns: --gosper-stable --gosper-unstable\n";
 
 useconds_t parse_input(const int argc, char *const *const argv) {
   int y = 0;

@@ -16,7 +16,26 @@ including diagonals):
  4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
 
 ### Running
-`make gol`. See `--help` for the various types of patterns that can be drawn.
+`make gol`. The following patterns are supported:
+- still lifes:
+  - `--block`
+  - `--beehive`
+  - `--loaf`
+  - `--boat`
+  - `--tub`
+- oscillators:
+  - `--blinker`
+  - `--toad`
+  - `--beacon`
+- spaceships:
+  - `--glider`
+  - `--lwss`
+- big:
+  - `--penta`
+  - `--pulsar`
+- guns:
+  - `--gosper-stable`
+  - `--gosper-unstable`
 
 ### Requirements
 Must have `ncurses` installed.
