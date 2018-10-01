@@ -8,13 +8,20 @@ static char helpstring[] =
     "patterns can be individually added with the below switches:\n"
     "still lifes: --block, --beehive, --loaf, --boat --tub\n"
     "oscillators: --blinker, --toad, --beacon\n"
-    "spaceships: --glider\n";
+    "spaceships: --glider --lwss\n"
+    "big: --penta --pulsar\n"
+    "guns: --gosper-stable --gosper--unstable\n";
 
-useconds_t parse_input(const int argc, char* const* const argv) {
+useconds_t parse_input(const int argc, char *const *const argv) {
   int y = 0;
   int x = 0;
+  if (argc == 1) {
+    printf("%s\n", helpstring);
+    return 0;
+  }
+
   for (int i = 1; i < argc; i++) {
-    if (strcmp(argv[i], "--help") == 0 || argc == 1) {
+    if (strcmp(argv[i], "--help") == 0) {
       printf("%s\n", helpstring);
       return 0;
     } else if (strcmp(argv[i], "--block") == 0) {
