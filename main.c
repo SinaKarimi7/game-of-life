@@ -1,32 +1,5 @@
 /*
- * gol.c - a dead simple C implementation of Conway's game of life,
- * using ncurses.
- *
- * ncurses snippet source:
- *
- https://stackoverflow.com/questions/18458064/how-to-refresh-the-screen-continuously-and-update-it-in-real-time
- * ----------------------------------------------------------------------
- * Statement (of the problem)
- *
- * Conway's Game of Life has four rules:
- * 1) Any live cell with fewer than two live neighbors dies, as if by under
- * population.
- * 2) Any live cell with two or three live neighbors lives on to the next
- * generation.
- * 3) Any live cell with more than three live neighbors dies, as if by
- * overpopulation.
- * 4) Any dead cell with exactly three live neighbors becomes a live cell, as if
- * by reproduction.
- * ----------------------------------------------------------------------
- * Understand / Plan
- * ----------------------------------------------------------------------
- * Execute
- *
- * See below.
- * ----------------------------------------------------------------------
- * Review
- *
- * Forthcoming
+ * main.c - entrypoint for program
  */
 
 #include <ncurses.h>
