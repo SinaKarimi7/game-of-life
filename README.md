@@ -1,6 +1,6 @@
 game-of-life
 ---
-Simple implementation of Conway's Game of Life.
+Simple implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
 ### Rules:
 In an N x M grid of cells, a cell is "alive" if it contains `X` and "dead" if
