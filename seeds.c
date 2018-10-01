@@ -202,6 +202,10 @@ void seed_penta(const int y, const int x) {
 }
 
 void seed_gosper_unstable(const int y, const int x) {
+  /*
+   * A derped version of Gosper's gun that explodes
+   * in a cool way.
+   */
   if (!(valid_seed_region(y, x, 40))) {
     return;
   }
@@ -251,6 +255,9 @@ void seed_gosper_unstable(const int y, const int x) {
 }
 
 void seed_gosper_stable(const int y, const int x) {
+  /*
+   * Correct implementation of Gosper's gun.
+   */
   if (!(valid_seed_region(y, x, 40))) {
     return;
   }
