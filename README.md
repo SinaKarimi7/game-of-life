@@ -2,7 +2,7 @@ game-of-life
 ---
 Simple implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) with ncurses:
 
-![alt text](gosper.png)
+![alt text](gosper-stable.svg)
 (_pictured: `./gol --gosper-stable`_)
 
 ### Rules:

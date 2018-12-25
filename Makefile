@@ -13,9 +13,11 @@ SRC :=*.c
 OUT :=gol
 COMPILE:=$(ANALYZER) $(CC) $(CFLAGS) $(WARNINGS) $(INCLUDE) $(SRC) -o $(OUT)
 
+all: gol
+
 clean:
-	-rm $(OUT)
-	-rm -r $(OUT)
+	-$(RM) $(OUT)
+	-$(RM) -r $(OUT)
 
 gol: clean
 	reset
@@ -41,3 +43,9 @@ gosper-unstable: gol
 
 gosper-stable: gol
 	./$(OUT) --gosper-stable
+
+%.svg:
+	termtosvg $@ -t window_frame -g 110x40 -c "./$(OUT) --$*"
+
+deps:
+	pip3 install --user termtosvg
