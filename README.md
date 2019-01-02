@@ -2,7 +2,7 @@ game-of-life
 ---
 Simple implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) with ncurses:
 
-<p align="center"><img src="https://raw.githack.com/mmcloughlin/game-of-life/master/gosper-stable.svg"></p>
+<p align="center"><img src="https://raw.githack.com/jsgoller1/game-of-life/master/gosper-stable.svg"></p>
 
 ### Rules:
 In an N x M grid of cells, a cell is "alive" if it contains `X` and "dead" if
